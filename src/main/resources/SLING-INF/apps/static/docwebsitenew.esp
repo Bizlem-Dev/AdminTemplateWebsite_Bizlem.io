@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<link rel="stylesheet" href="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/css/wordpressbootstrap.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link rel="stylesheet" href="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/css/wordpressstyle.css">
+
+</head>
+<body>
+
+
+  <!-- filter section -->
+        <div class="newspaper-filter" > 
+    		        <div class="container">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true" onclick="allfunction();">All</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                        <!-- filter-block start -->
+                       
+						
+                        <!-- filter-block end-->
+                        <!-- filter-block start -->
+                       
+                        <!-- filter-block end-->      
+                        
+                        <!-- filter-block start -->
+                
+                        <!-- filter-block end--> 
+                    </div>
+
+
+                    <div class="tab-pane fade" id="pills-business-development" role="tabpanel" aria-labelledby="pills-business-development-tab">...</div>
+                    <div class="tab-pane fade" id="pills-fundraising" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                </div>
+        </div>
+	 </div> 
+	 
+	 
+	  <link rel="stylesheet" href="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/css/flexslider.css" type="text/css" media="screen" />     
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/fonts/fonts.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/css/custom.css">
+	    <!-- learn-more-wrapper  style="display:none" -->
+    <div class="learn-more-wrapper"  id= "learn-more-wrapper-id" style="display:none">
+        <div class="container">
+          <div class="formate-select">
+                            <a class="btn btn-primary" href="https://uk.bluealgo.com:8083/portal/servlet/service/newsPaperContainerWordpress?list=0" >  Back To List </a>
+                            
+                        </div>
+    <br>
+            <!-- learn-more-slider -->
+            <div class="learn-more-slider">
+                <!-- flexslider -->
+                <div class="flexslider">
+                    <ul class="slides"   id=settempimagesli>
+                     
+  
+                    </ul>
+
+                    <!-- "popup-click -->
+                    <button class="popup-click tracker">
+                        <i class="icon"></i> Expand
+                    </button> 
+
+                    <!-- save-box tracker -->
+                    <div class="save-box tracker">
+                        <button class="add icon"  data-toggle="tooltip" data-placement="right" title="Click to Save"> </button>
+                        <div class="content">
+                            <h4>Save This Template to Download it Later</h4>
+                            <h6>Add to my collection. Access from any device anytime, anywhere</h6>
+                        </div>
+                    </div>                    
+
+                  </div>
+
+           
+                
+            </div>     
+            
+            <!-- learn-more-slider -->
+            <div class="learn-more-slider-content before-content">
+                    <div class="title-sec">
+                        <h1 id="templatenameid"> Provincial Report Card Template </h1><span class="icon rating"></span> 
+                    </div>
+                <div class="ttl-sec">
+                    <div class="ttl">                        
+                        <div class="formate-select">
+                            <ul> 
+                                <li>
+                                    <h6 class="sub-head">Formats:</h6>                                
+                                </li>
+                                <li>
+                                    <label class="file-formate before tracker">
+                                        <span class="icon format-icon word-icon"></span>  MS Word 
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="formate-select">
+                           <!--  <button class="btn btn-primary">  Edit in Doctiger </button>-->
+                            <!--  <button class="btn btn-default">  Use as it is </button>-->
+                            <button class="btn btn-secondary" id="downloadinmylibraty" >  Download in my Library </button>
+                        </div> 
+                        <div class="license-block">
+                            <p> Learn more about our <a href="#"> License </a></p>
+                        </div>
+   
+                        <!-- learn-more-content -->
+                        <div class="learn-more-content">
+                            <ul class="nav nav-tabs" id="learnMore" role="tablist" style="background: #f2f2f2">
+                                <li class="nav-item">
+                                    <a style="line-height: 18px;color: #065583;font-weight: 600;font-size: 12px;border: none;text-align: center;height: 100%;border-radius: 0;-webkit-border-radius: 0;" class="nav-link active" id="document-tab" data-toggle="tab" href="#document" role="tab" aria-controls="document" aria-selected="true">What is the Document</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="line-height: 18px;color: #065583;font-weight: 600;font-size: 12px;border: none;text-align: center;height: 100%;border-radius: 0;-webkit-border-radius: 0;" class="nav-link" id="this-document-tab" data-toggle="tab" href="#this-document" role="tab" aria-controls="this-document" aria-selected="false">When do I need this Document</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="line-height: 18px;color: #065583;font-weight: 600;font-size: 12px;border: none;text-align: center;height: 100%;border-radius: 0;-webkit-border-radius: 0;" class="nav-link" id="mandatory-tab" data-toggle="tab" href="#mandatory" role="tab" aria-controls="mandatory" aria-selected="false">Mandatory Inclusions</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="learnMoreContent">
+                                <div class="tab-pane fade show active" id="document" role="tabpanel" aria-labelledby="document-tab">
+                                    <ul> 
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> Original Suggestive Headings &amp; Content </li> 
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> Instant Download, Editable &amp; Printable </li>
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> Available in A4 &amp; US Letter Sizes </li> 
+                                    </ul>                                    
+                                </div>
+                                <div class="tab-pane fade" id="this-document" role="tabpanel" aria-labelledby="this-document-tab">
+                                    <ul>
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> Free Standard Google fonts </li>
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> All File Formats, Yours to Keep Forever </li>
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> Orientation style in Portrait </li> 
+                                    </ul>                                     
+                                </div>
+                                <div class="tab-pane fade" id="mandatory" role="tabpanel" aria-labelledby="mandatory-tab">
+                                    <ul>
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> Free Standard Google fonts </li>
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> All File Formats, Yours to Keep Forever </li>
+                                        <li style="width: 100%;color: #545453;font-size: 13px;font-weight: 400;margin-bottom: 0;letter-spacing: .4px;background: url(../images/dots.svg) -13px 7px no-repeat;padding-left: 16px;line-height: 18px;list-style: none;"> Orientation style in Portrait </li> 
+                                    </ul>                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--  <div class="below-payment">                           
+                            <div class="report-block">
+                                <ul>
+                                    <li><a href="#"><i class="report-icon"></i>Report</a></li>
+                                    <li style="display:none">How to Edit?</li>
+                                </ul>
+                            </div>                            
+                        </div>  -->                      
+                            
+                    </div>
+                </div>                
+            </div>    
+
+        </div>
+    </div>
+    
+<script src="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/js/JsData.js" type="text/javascript"></script>
+
+<script src="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/js/jquery-min.js"></script> 
+<script src="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/js/popper.min.js"></script> 
+<script src="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/js/bootstrap.min.js"></script>
+<script defer src="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/js/jquery.flexslider.js"></script>
+<script src="<%=request.getContextPath()%>/apps/AdminWebSiteCSSAndJs/js/custom.js"></script>
+    
+    
+    </body>
+</html>
